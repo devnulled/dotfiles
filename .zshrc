@@ -34,4 +34,8 @@ plugins=(git brew django mvn screen)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=/Users/brandon/scripts:/usr/local/apache-maven-3.0.3:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+
+export TOMCAT_HOME=/usr/local/apache-tomcat
+
+alias git-review='git push origin HEAD:refs/for/master'

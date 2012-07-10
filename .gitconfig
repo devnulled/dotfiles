@@ -1,6 +1,22 @@
 [user]
 	name = "Brandon Harper"
 	email = brandon@devnulled.com
+
+[merge]
+	tool = kdiff3
+
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+
+[diff]
+	tool = kdiff3
+
+[difftool "kdiff3]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+
+[core]
+	editor = mate -w
+
 [color]
 	ui = auto
 
