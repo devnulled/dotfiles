@@ -11,7 +11,7 @@
 [diff]
 	tool = kdiff3
 
-[difftool "kdiff3]
+[difftool "kdiff3"]
 	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 
 [core]
