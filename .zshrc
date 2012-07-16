@@ -38,4 +38,6 @@ export PATH=/Users/brandon/scripts:/usr/local/apache-maven-3.0.3:/usr/bin:/bin:/
 
 export TOMCAT_HOME=/usr/local/apache-tomcat
 
+export PYTHONPATH=/usr/local/lib/python/site-packages/
+
 alias git-review='git push origin HEAD:refs/for/master'
