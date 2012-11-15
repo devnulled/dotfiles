@@ -36,6 +36,11 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/Users/brandon/scripts:/usr/local/apache-maven-3.0.3:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
+
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
+
 export TOMCAT_HOME=/usr/local/apache-tomcat
 
 export PYTHONPATH=/usr/local/lib/python/site-packages/
@@ -43,3 +48,7 @@ export PYTHONPATH=/usr/local/lib/python/site-packages/
 alias git-review='git push origin HEAD:refs/for/master'
 
 export GRADLE_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote '
+
+unsetopt correct_all
+
+[[ -s "$HOME/.gvm/bin/gvm-init.sh" ]] && source "$HOME/.gvm/bin/gvm-init.sh"

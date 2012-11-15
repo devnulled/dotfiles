@@ -1,18 +1,24 @@
 [user]
 	name = "Brandon Harper"
-	email = brandon@devnulled.com
+	email = brandon.harper@twcable.com
 
 [merge]
-	tool = kdiff3
+	tool = diffmerge
 
 [mergetool "kdiff3"]
 	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 
+[mergetool "diffmerge"]
+	cmd = "diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE"
+	trustExitCode = false
 [diff]
-	tool = kdiff3
+	tool = diffmerge
 
 [difftool "kdiff3"]
 	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+
+[difftool "diffmerge"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge "$LOCAL" "$REMOTE"
 
 [core]
 	editor = mate -w
@@ -59,3 +65,5 @@
 	l1 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	l2 = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	l3 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[branch]
+	autosetuprebase = always
