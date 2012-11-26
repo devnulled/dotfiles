@@ -40,6 +40,8 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK
 
 export TOMCAT_HOME=/usr/local/apache-tomcat
 
+export CATALINA_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote'
+
 export PYTHONPATH=/usr/local/lib/python/site-packages/
 
 alias git-review='git push origin HEAD:refs/for/master'
