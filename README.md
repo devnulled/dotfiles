@@ -9,7 +9,6 @@ I used to manage these with a crappy rsync script, but now I use [Homesick](http
 
 To get started with my dotfiles after installing Homesick, run the following commands:
 
-``
-homesick clone git://github.com/devnulled/dotfiles.git
-homesick symlink dotfiles
-`` 
+	homesick clone git://github.com/devnulled/dotfiles.git
+
+	homesick symlink dotfiles

@@ -1,6 +1,6 @@
-[submodule ".vim/bundle/nerdtree"]
-	path = home/.vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
-[submodule ".oh-my-zsh"]
+[submodule "home/.oh-my-zsh"]
 	path = home/.oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
+[submodule "home/.vim/bundle/nerdtree"]
+	path = home/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
