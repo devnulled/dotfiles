@@ -76,3 +76,5 @@ chflags nohidden ~/Library
 # Disable local Time Machine backups
 hash tmutil &> /dev/null && sudo tmutil disablelocal
 
+# Set zsh as the default shell type
+chsh -s /bin/zsh
