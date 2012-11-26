@@ -10,8 +10,6 @@ Here are the various things I install when setting up a new Mac for development.
 - Evernote
 - Fonts
 	- Fonts can be found under 'Fonts' subdir	
-	- Meslo LG Fonts
-	- Anonymous Pro Fonts
 - Solarized
 - iTerm2
 	- Use the color scheme in this dir under iTerm2
