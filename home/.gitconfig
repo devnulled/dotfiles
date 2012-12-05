@@ -21,7 +21,7 @@
 	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge "$LOCAL" "$REMOTE"
 
 [core]
-	editor = mate -w
+	editor = "subl -n -w"
 
 [color]
 	ui = auto
