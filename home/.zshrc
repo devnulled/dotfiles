@@ -36,7 +36,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/apache-maven-3.0.3:~/bin:~/.bin:~/.scripts:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk/Contents/Home
 
 export TOMCAT_HOME=/usr/local/apache-tomcat
 
