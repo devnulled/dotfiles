@@ -36,7 +36,10 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/apache-maven-3.0.3:~/bin:~/.bin:~/.scripts:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk/Contents/Home
+export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7.0)
+export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6.0)
+
+export JAVA_HOME=$JAVA6_HOME
 
 export TOMCAT_HOME=/usr/local/apache-tomcat
 
@@ -59,3 +62,12 @@ export CLICOLOR=1
 
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
+
+# List all versions of Java installed
+alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d_\d\d" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
+
+# Switches the version of Java being used
+function java_use() {
+    export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+    java -version
+}
