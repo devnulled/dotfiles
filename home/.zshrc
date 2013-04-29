@@ -73,3 +73,6 @@ function java_use() {
     export JAVA_HOME=$(/usr/libexec/java_home -v $1)
     java -version
 }
+
+# Load all local customizations which are not meant to be public
+source .private/.zshrc_extras || echo ".zshrc: Unable to load .private/.zshrc_extras; skipping"
