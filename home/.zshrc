@@ -37,6 +37,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/opt/curl/bin:/usr/local/apache-maven-3.0.3:~/bin:~/.bin:~/.scripts:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH=$PATH:git-annex.app/Contents/MacOS
 
 export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7.0)
 export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6.0)
