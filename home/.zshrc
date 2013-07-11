@@ -76,3 +76,5 @@ function java_use() {
 
 # Load all local customizations which are not meant to be public
 source .private/.zshrc_extras || echo ".zshrc: Unable to load .private/.zshrc_extras; skipping"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
