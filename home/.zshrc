@@ -56,6 +56,9 @@ export GRADLE_HOME='/usr/local/bin/gradle'
 
 export GRADLE_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote '
 
+GPG_TTY=$(tty)
+export GPG_TTY
+
 unsetopt correct_all
 
 [[ -s "$HOME/.gvm/bin/gvm-init.sh" ]] && source "$HOME/.gvm/bin/gvm-init.sh"
