@@ -52,6 +52,9 @@ export PYTHONPATH=/usr/local/lib/python/site-packages/
 
 alias git-review='git push origin HEAD:refs/for/master'
 
+# serve dir as static site
+alias serve="python -m SimpleHTTPServer"
+
 export GRADLE_HOME='/usr/local/bin/gradle'
 
 export GRADLE_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote '
