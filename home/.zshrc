@@ -12,6 +12,7 @@ ZSH_THEME="robbyrussell"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias flushdns="sudo killall -HUP mDNSResponder"
+alias serveit="python -m SimpleHTTPServer"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
