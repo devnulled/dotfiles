@@ -13,6 +13,7 @@ ZSH_THEME="robbyrussell"
 
 alias flushdns="sudo killall -HUP mDNSResponder"
 alias serveit="python -m SimpleHTTPServer"
+alias git-review='git push origin HEAD:refs/for/master'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -32,13 +33,16 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew django mvn screen)
+plugins=(brew bundlr django git jira mvn sbt screen sublime vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/opt/curl/bin:/usr/local/apache-maven-3.0.3:~/bin:~/.bin:~/.scripts:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
-export PATH=$PATH:/Applications/git-annex.app/Contents/MacOS
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/Applications/Postgres.app/Contents/MacOS/bin
+PATH=$PATH:/usr/local/opt/curl/bin:/usr/local/apache-maven-3.0.3
+export PATH=~/bin:~/.bin:~/.scripts:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$PATH
+
 
 export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7.0)
 export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6.0)
@@ -51,14 +55,9 @@ export CATALINA_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMark
 
 export PYTHONPATH=/usr/local/lib/python/site-packages/
 
-alias git-review='git push origin HEAD:refs/for/master'
-
-# serve dir as static site
-alias serve="python -m SimpleHTTPServer"
-
 export GRADLE_HOME='/usr/local/bin/gradle'
 
-export GRADLE_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote '
+export GRADLE_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote'
 
 GPG_TTY=$(tty)
 export GPG_TTY
@@ -85,4 +84,4 @@ function java_use() {
 # Load all local customizations which are not meant to be public
 source .private/.zshrc_extras || echo ".zshrc: Unable to load .private/.zshrc_extras; skipping"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
