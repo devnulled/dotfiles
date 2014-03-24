@@ -41,7 +41,7 @@ source $ZSH/oh-my-zsh.sh
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:/Applications/Postgres93.app/Contents/MacOS/bin
 PATH=$PATH:/usr/local/opt/curl/bin:/usr/local/apache-maven-3.0.3
-export PATH=~/bin:~/.bin:~/.scripts:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$PATH
+export PATH=~/bin:~/.bin:~/.scripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$PATH
 
 
 export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7.0)
