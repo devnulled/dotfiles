@@ -37,8 +37,13 @@ plugins=(brew bundlr django git jira mvn sbt screen sublime vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
+# Set the GOPATH
+
+export GOPATH=~/dev/go
+
 # Customize to your needs...
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$GOPATH
 PATH=$PATH:/Applications/Postgres93.app/Contents/MacOS/bin
 PATH=$PATH:/usr/local/opt/curl/bin:/usr/local/apache-maven-3.0.3
 export PATH=~/bin:~/.bin:~/.scripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$PATH
