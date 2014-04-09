@@ -41,6 +41,10 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=~/dev/go
 
+# Set DOCKER_HOST
+
+export DOCKER_HOST=tcp://127.0.0.1:4243
+
 # Customize to your needs...
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$GOPATH
