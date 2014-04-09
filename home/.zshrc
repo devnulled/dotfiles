@@ -43,7 +43,7 @@ export GOPATH=~/dev/go
 
 # Set DOCKER_HOST
 
-export DOCKER_HOST=tcp://127.0.0.1:4243
+export DOCKER_HOST=tcp://127.0.0.1:2375
 
 # Customize to your needs...
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
