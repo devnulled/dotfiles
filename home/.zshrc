@@ -64,6 +64,15 @@ export GRADLE_HOME='/usr/local/bin/gradle'
 
 export GRADLE_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote'
 
+# TODO: Make these two easy to enable/switch between
+# export GRAILS_OPTS="-Xmx1G -Xms256m -XX:MaxPermSize=256m -javaagent:/usr/local/appdynamics/agent/javaagent.jar"
+
+# Prod like settings
+#export GRAILS_OPTS="-server -Xms2048M -Xmx2048M -XX:NewSize=1024m -XX:MaxNewSize=1024m -XX:PermSize=512M -XX:MaxPermSize=512M -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSClassUnloadingEnabled -XX:+UseTLAB -XX:+HeapDumpOnOutOfMemoryError -XX:+DisableExplicitGC -Djava.awt.headless=true -Djava.net.preferIPv4Stack=true"
+
+# Default Local Settings
+export GRAILS_OPTS="-Xmx1G -Xms256m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSClassUnloadingEnabled -XX:+UseTLAB -XX:+HeapDumpOnOutOfMemoryError -XX:+DisableExplicitGC -Djava.awt.headless=true -Djava.net.preferIPv4Stack=true"
+
 GPG_TTY=$(tty)
 export GPG_TTY
 
