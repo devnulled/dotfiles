@@ -9,7 +9,7 @@
 	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 
 [mergetool "diffmerge"]
-	cmd = "/Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"\$MERGED\" \"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
+	cmd = "/Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\""
 	trustExitCode = true
 [diff]
 	tool = diffmerge
@@ -18,7 +18,7 @@
 	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 
 [difftool "diffmerge"]
-	cmd = "/Applications/DiffMerge.app/Contents/MacOS/DiffMerge \"\$LOCAL\" \"\$REMOTE\""
+	cmd = "/Applications/DiffMerge.app/Contents/MacOS/DiffMerge \"$LOCAL\" \"$REMOTE\""
 
 [core]
 	editor = "subl -n -w"
