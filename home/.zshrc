@@ -41,6 +41,9 @@ source $ZSH/oh-my-zsh.sh
 export GOROOT=~/frameworks/go-1.2.1
 export GOPATH=~/dev/go
 
+# Set our own Ansible Hosts file instead of /etc/ansible/hosts
+export ANSIBLE_HOSTS=~/.ansible_hosts
+
 # Customize to your needs...
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$GOROOT/bin
