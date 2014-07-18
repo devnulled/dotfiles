@@ -68,7 +68,7 @@ export GRADLE_HOME='/usr/local/bin/gradle'
 export GRADLE_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote'
 
 export SBT_NORMAL_OPTS="-XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=512M -XX:MaxPermSize=2024M -Xmx4680M -Xms1024M -d64"
-export SBT_DEBUG_OPTS="-XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=512M -XX:MaxPermSize=2024M -Xmx4680M -Xms1024M -d64 agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5004"
+export SBT_DEBUG_OPTS="-XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=512M -XX:MaxPermSize=2024M -Xmx4680M -Xms1024M -d64 -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5004"
 export SBT_OPTS='$SBT_NORMAL_OPTS'
 
 alias sbt-debug="export SBT_OPTS='$SBT_DEBUG_OPTS' ; sbt"
