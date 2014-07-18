@@ -14,7 +14,6 @@ ZSH_THEME="robbyrussell"
 alias flushdns="sudo killall -HUP mDNSResponder"
 alias serveit="python -m SimpleHTTPServer"
 alias git-review='git push origin HEAD:refs/for/master'
-alias sbt-debug="sbt -J-X-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5004"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -67,6 +66,13 @@ export PYTHONPATH=/usr/local/lib/python/site-packages/
 export GRADLE_HOME='/usr/local/bin/gradle'
 
 export GRADLE_OPTS='-XX:MaxPermSize=1024M -Xmx2680M -Xms1024M -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote'
+
+export SBT_NORMAL_OPTS="-XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=512M -XX:MaxPermSize=2024M -Xmx4680M -Xms1024M -d64"
+export SBT_DEBUG_OPTS="$SBT_NORMAL_OPTS agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5004"
+export SBT_OPTS=$SBT_NORMAL_OPTS
+
+alias sbt-debug="export SBT_OPTS=$SBT_DEBUG_OPTS ; sbt"
+alias sbt-normal="export SBT_OPTS=$SBT_NORMAL_OPTS ; sbt"
 
 # TODO: Make these two easy to enable/switch between
 # export GRAILS_OPTS="-Xmx1G -Xms256m -XX:MaxPermSize=256m -javaagent:/usr/local/appdynamics/agent/javaagent.jar"
