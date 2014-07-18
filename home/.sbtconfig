@@ -2,5 +2,5 @@ SBT_NORMAL_OPTS="-XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=512M -X
 SBT_DEBUG_OPTS="$SBT_NORMAL_OPTS agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5004"
 SBT_OPTS=$SBT_NORMAL_OPTS
 
-alias sbt-debug="export SBT_OPTS=$SBT_DEBUG_OPTS ; sbt -jvm-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5004"
-alias sbt-reset="export SBT_OPTS=$SBT_NORMAL_OPTS"
+alias sbt-debug="export SBT_OPTS=$SBT_DEBUG_OPTS ; sbt"
+alias sbt-normal="export SBT_OPTS=$SBT_NORMAL_OPTS ; sbt"
