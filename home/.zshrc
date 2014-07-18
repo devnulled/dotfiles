@@ -14,6 +14,7 @@ ZSH_THEME="robbyrussell"
 alias flushdns="sudo killall -HUP mDNSResponder"
 alias serveit="python -m SimpleHTTPServer"
 alias git-review='git push origin HEAD:refs/for/master'
+alias sbt-debug="sbt -J-X-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5004"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
