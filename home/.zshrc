@@ -49,6 +49,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$GOROOT/bin
 PATH=$PATH:/Applications/Postgres93.app/Contents/MacOS/bin
 PATH=$PATH:/usr/local/opt/curl/bin:/usr/local/apache-maven-3.0.3
+PATH=$PATH:/usr/texbin
 export PATH=~/bin:~/.bin:~/.scripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$PATH
 
 
