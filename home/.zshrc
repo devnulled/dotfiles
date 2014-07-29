@@ -52,11 +52,12 @@ PATH=$PATH:/usr/local/opt/curl/bin:/usr/local/apache-maven-3.0.3
 PATH=$PATH:/usr/texbin
 export PATH=~/bin:~/.bin:~/.scripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$PATH
 
-
-export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7.0)
 export JAVA6_HOME=$(/usr/libexec/java_home -v 1.6.0)
+export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7.0)
+export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8.0)
 
-export JAVA_HOME=$JAVA6_HOME
+# This should be loaded in .zshrc_extras]
+#export JAVA_HOME=$JAVA6_HOME
 
 export TOMCAT_HOME=/usr/local/apache-tomcat
 
