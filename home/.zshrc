@@ -14,7 +14,7 @@ ZSH_THEME="robbyrussell"
 alias flushdns="sudo killall -HUP mDNSResponder"
 alias serveit="python -m SimpleHTTPServer"
 alias git-review='git push origin HEAD:refs/for/master'
-alias clean-intellij="rm -rfv `find . -name \".idea\" -type d` && rm -rfv `find . -name \*.iml` && rm -rfv `find . -name \*.iws` && rm -rfv `find . -name \*.ipl`"
+alias clean-intellij='rm -rfv `find . -name ".idea" -type d` && rm -rfv `find . -name \*.iml` && rm -rfv `find . -name \*.iws` && rm -rfv `find . -name \*.ipl`'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
